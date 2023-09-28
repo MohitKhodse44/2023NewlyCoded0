@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        
+        let pro = new Promise((resolve,reject)=>{
+            setTimeout(() =>{
+                let gift= " that i will gift u iphone on ur birthday";
+                let promise = prompt("enter your input");
+                if(promise== "Iphone"){
+                    resolve(gift);
+                }
+                else{
+                    reject();
+                }
+              
+            },5000)
+        })
+
+        pro.then((bGift) =>{
+            console.log(`mene jo promise kiya tha ${bGift} vo me aaj pura karunga`);
+        }).catch((error)=>{
+            console.log("color available nahi tha sorry XIOMI le lenge.");
+        })
+      
+    </script>
+</body>
+</html>

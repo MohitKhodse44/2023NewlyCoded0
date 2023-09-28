@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+         let prom1 = new Promise((res,rej)=>{
+        setTimeout(()=>{
+            let arr = [10,20,30,40]
+            //  res(`hello`);
+             rej("error");
+
+        },2000)
+     })
+
+     let prom2 = new Promise((res,rej)=>{
+        setTimeout(()=>{
+            let arr = [10,20,30,40]
+            // res(`hello`);
+             rej("error");
+
+        },4000)
+     })
+
+     async function getData() {
+        let data = await prom1;
+        console.log(data);
+        let data2 = await prom2;
+        console.log(data2);
+        
+        return data;
+
+     }
+
+     console.log(getData());
+    </script>
+</body>
+</html>

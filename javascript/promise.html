@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+        let pro = new Promise((resolve,reject)=>{
+setTimeout(() =>{
+    let shadi = "i promise ill never leave i!!"
+    resolve(shadi);
+    reject("abbu nahi manenge!!!");
+
+},3000)
+
+        })
+
+        pro.then((shadiFix)=>{
+            console.log(`mene kaha tha ${shadiFix} ghar vale ma gaye`);
+        }).catch((error)=>{
+            console.log("hamara caste alag hai");
+        })
+        
+        
+
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    let prom1= new Promise((res,rej)=>{
+        setTimeout(()=>{
+            let obj1 = {
+            name:"ashish",
+            age:45,
+            contact:8888888888,
+            }
+      
+        res(`My  name is ${obj1.name} . My age is ${obj1.age}.My conact number is 88888888`)},3000)
+
+    })
+
+    let prom2= new Promise((resolve,reject)=>{
+        setTimeout(()=>{
+            let obj2 = {
+                name:"jayesh",
+                age:35,
+                contact:8888889999,
+            }
+        
+            // resolve(`My name is ${obj2.name}. My age is ${obj2.age}. My conatct number is ${obj2.contact} `)
+            reject("error")
+        
+            
+    },6000)
+})
+
+async function bioData(){
+    let data1= await prom1
+    console.log(data1);
+    let data2 =await prom2;
+    console.log(data2);
+}
+bioData()
+</script>
+    
+</body>
+</html>

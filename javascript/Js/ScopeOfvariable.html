@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // global scope - it has highest accssebility , it can be accssed anywhere.
+        // block scope - the visibility of a memeber is only inside within a block where it is stored.
+        // memeber with the block scope can not be used outside of the block.
+        // Note-: the variables declared with the let and const have block scope.means can not be used outside the block.
+
+        {
+            let a =10;
+            console.log(a);
+
+        }
+        // console.log(a);  error can not be accessed it here.
+
+        {
+            const b= 30;
+            console.log(b);
+        }
+        // console.log(b)  error because b is can not be access it here
+        {
+              var d =50;
+              console.log(d)
+              var d =90;
+              console.log(d);
+        }
+        // console.log(d); (global scope variable) d can be accessed here because the var is not block scope variable.
+
+        
+         
+        let t=500;
+        t=880
+         console.log(t);
+    </script>
+</body>
+</html>
