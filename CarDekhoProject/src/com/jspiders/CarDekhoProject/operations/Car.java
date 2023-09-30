@@ -13,7 +13,7 @@ public class Car {
         this.price = price;
     }
 
-    // Getter methods for id, name, brand, and price
+   
     public int getId() {
         return id;
     }
@@ -30,7 +30,7 @@ public class Car {
         return price;
     }
 
-    // Setter methods if needed
+    
     public void setId(int id) {
         this.id = id;
     }
@@ -47,6 +47,6 @@ public class Car {
         this.price = price;
     }
 
-    // Other methods related to Car objects
+   
 }
 
